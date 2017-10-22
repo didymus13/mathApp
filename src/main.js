@@ -7,6 +7,8 @@ import router from './router'
 import store from './store'
 require('./assets/sass/main.scss');
 
+window._ = require('lodash');
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

@@ -7,6 +7,7 @@
           <input type="number" class="input" name="minimum" id="minimum" @input="updateMin" :value="config.numberMin">
         </div>
       </div>
+      
       <div class="field is-horizontal">
         <label for="maximum" class="label">Maximum</label>
         <div class="control">
