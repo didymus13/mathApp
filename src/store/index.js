@@ -14,14 +14,14 @@ export default new Vuex.Store({
       number2: 0,
     },
     config: {
-      numberMin: 1,
+      numberMin: 0,
       numberMax: 12,
       useTotalForLimit: true,
       wholeAnswersOnly: true,
       positiveAnswersOnly: true
     }
   },
-  
+
   getters: {
     isConfigValid: state => {
       return state.config.numberMin <= state.config.numberMax;
