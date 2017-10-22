@@ -5,7 +5,7 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
   state: {
-    progress: {
+    result: {
       correct: 0,
       total: 0,
     },
@@ -30,11 +30,11 @@ export default new Vuex.Store({
       if (!getters.hasAnswers) {
         return 0;
       }
-      let percent = state.progress.correct / state.progress.total * 100;
+      let percent = state.result.correct / state.result.total * 100;
       return Math.round(percent);
     },
     hasAnswers: state => {
-      return state.progress.total > 0;
+      return state.result.total > 0;
     }
   },
 
@@ -59,10 +59,10 @@ export default new Vuex.Store({
       state.problem = problem;
     },
     incrementCorrect(state) {
-      state.progress.correct++;
+      state.result.correct++;
     },
     incrementTotal(state) {
-      state.progress.total++;
+      state.result.total++;
     }
   }
 })
