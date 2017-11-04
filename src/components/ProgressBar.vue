@@ -1,10 +1,13 @@
 <template lang="html">
-  <progress class="progress"
-            :class="{'is-danger': isFail, 'is-warning': isPass, 'is-success': isGreat}"
-            :value="result.correct"
-            :max="result.total">
-    {{ percentCorrect }}%
-  </progress>
+  <div>
+    <progress class="progress"
+              :class="{'is-danger': isFail, 'is-warning': isPass, 'is-success': isGreat}"
+              :value="result.correct"
+              :max="result.total">
+      {{ percentCorrect }}%
+    </progress>
+    {{ result.correct }} / {{ result.total }}
+  </div>
 </template>
 
 <script>
