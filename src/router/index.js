@@ -4,6 +4,7 @@ import HelloWorld from '@/components/HelloWorld'
 
 import Config from '@/components/Config'
 import Addition from '@/components/Addition'
+import Subtraction from '@/components/Subtraction'
 
 Vue.use(Router)
 
@@ -23,6 +24,11 @@ export default new Router({
       path: '/addition',
       name: 'Addition',
       component: Addition
+    },
+    {
+      path: '/subtraction',
+      name: 'Subtraction',
+      component: Subtraction
     }
   ]
 })
