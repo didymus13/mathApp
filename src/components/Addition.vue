@@ -10,7 +10,7 @@
             <input type="number" name="answer" id="answer" class="input" v-model="answer" @keyup.enter="verify">
           </p>
           <p class="control">
-            <button class="button is-primary" @click="verify">Answer</button>
+            <button class="button is-primary" @click="verify">{{ $t('Answer') }}</button>
           </p>
         </div>
       </div>
