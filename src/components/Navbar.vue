@@ -15,12 +15,21 @@
 
     <div class="navbar-menu">
       <div class="navbar-start">
-        <a href="#/addition" class="navbar-item">{{ $t('Addition') }}</a>
-        <a href="#/subtraction" class="navbar-item">{{ $t('Subtraction') }}</a>
+        <a href="#/addition" class="navbar-item">
+          <span class="fas fa-plus-square fa-fw"></span>
+          {{ $t('Addition') }}
+        </a>
+        <a href="#/subtraction" class="navbar-item">
+          <span class="fas fa-minus-square fa-fw"></span>
+          {{ $t('Subtraction') }}
+        </a>
       </div>
 
       <div class="navbar-end">
-        <a href="#/config" class="navbar-item">{{ $t('Config') }}</a>
+        <a href="#/config" class="navbar-item">
+          <span class="fas fa-cog fa-fw"></span>
+          {{ $t('Config') }}
+        </a>
       </div>
     </div>
   </nav>

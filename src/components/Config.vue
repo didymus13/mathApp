@@ -7,7 +7,7 @@
           <input type="number" class="input" name="minimum" id="minimum" @input="updateMin" :value="config.numberMin">
         </div>
       </div>
-      
+
       <div class="field is-horizontal">
         <label for="maximum" class="label">Maximum</label>
         <div class="control">
@@ -16,17 +16,17 @@
       </div>
 
       <div class="field">
-        <input type="checkbox" name="useTotalForLimit" id="useTotalForLimit" class="switch" v-model="config.useTotalForLimit">
+        <input type="checkbox" name="useTotalForLimit" id="useTotalForLimit" class="switch is-rounded" v-model="config.useTotalForLimit">
         <label for="useTotalForLimit">useTotalForLimit</label>
       </div>
 
       <div class="field">
-        <input type="checkbox" name="wholeAnswersOnly" id="wholeAnswersOnly" class="switch" v-model="config.wholeAnswersOnly">
+        <input type="checkbox" name="wholeAnswersOnly" id="wholeAnswersOnly" class="switch is-rounded" v-model="config.wholeAnswersOnly">
         <label for="wholeAnswersOnly">wholeAnswersOnly</label>
       </div>
 
       <div class="field">
-        <input type="checkbox" name="positiveAnswersOnly" id="positiveAnswersOnly" class="switch" v-model="config.positiveAnswersOnly">
+        <input type="checkbox" name="positiveAnswersOnly" id="positiveAnswersOnly" class="switch is-rounded" v-model="config.positiveAnswersOnly">
         <label for="positiveAnswersOnly">positiveAnswersOnly</label>
       </div>
     </div>
