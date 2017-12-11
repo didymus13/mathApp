@@ -6,6 +6,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
   state: {
     result: {
+      wasCorrect: false,
       correct: 0,
       total: 0,
     },
@@ -35,12 +36,16 @@ export default new Vuex.Store({
     },
     hasAnswers: state => {
       return state.result.total > 0;
+    },
+    isCorrect: state => {
+      return state.result.wasCorrect;
     }
   },
 
   actions: {
     checkAnswer: ({commit}, payload) => {
       let answer = parseInt(payload.answer);
+      commit('setWasCorrect', answer == payload.solution);
       if (answer == payload.solution) {
         commit('incrementCorrect');
       }
@@ -63,6 +68,9 @@ export default new Vuex.Store({
     },
     incrementTotal(state) {
       state.result.total++;
+    },
+    setWasCorrect(state, value) {
+      state.result.wasCorrect = value
     }
   }
 })

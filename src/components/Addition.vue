@@ -15,6 +15,13 @@
         </div>
       </div>
     </div>
+    <div class="clearfix"></div>
+    <div v-show="hasAnswers">
+      <span :class="{'has-text-success': isCorrect, 'has-text-danger': !isCorrect}">
+        <span class="fas fa-10x" :class="{'fa-thumbs-up': isCorrect, 'fa-thumbs-down': !isCorrect}"></span>
+      </span>
+    </div>
+
     <progress-bar v-show="hasAnswers" />
   </div>
 </template>
@@ -36,7 +43,7 @@ export default {
 
   computed: {
     ...mapState(['problem', 'config', 'progress']),
-    ...mapGetters(['hasAnswers', 'percentCorrect']),
+    ...mapGetters(['hasAnswers', 'percentCorrect', 'isCorrect']),
     solution() {
       return this.problem.number1 + this.problem.number2;
     }
