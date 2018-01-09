@@ -1,5 +1,6 @@
 <template>
-  <section class="section" id="config">
+  <section id="config">
+    <h1 class="title">{{ $t('Configuration') }}</h1>
     <div class="container">
       <div class="field is-horizontal">
         <label for="minimum" class="label">Minimum</label>

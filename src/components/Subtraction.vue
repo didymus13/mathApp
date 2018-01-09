@@ -1,5 +1,6 @@
 <template lang="html">
-  <div id="addition">
+  <div id="subtraction">
+    <h1 class="title">{{ $t('Subtraction') }}</h1>
     <div class="field is-horizontal">
       <div class="field-label is-normal">
         {{ this.problem.number1 }} - {{ this.problem.number2 }} =
@@ -15,6 +16,7 @@
         </div>
       </div>
     </div>
+    <answer-result v-show="hasAnswers" />
     <progress-bar v-show="hasAnswers" />
   </div>
 </template>
@@ -22,10 +24,12 @@
 <script>
 import {mapState, mapGetters, mapMutations, mapActions} from 'vuex';
 import ProgressBar from './ProgressBar';
+import AnswerResult from './AnswerResult';
 
 export default {
   components: {
-    ProgressBar: ProgressBar
+    ProgressBar: ProgressBar,
+    AnswerResult: AnswerResult
   },
 
   data() {

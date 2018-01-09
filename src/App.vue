@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <navbar></navbar>
-    <img src="./assets/logo.png">
     <div class="section">
       <div class="content">
         <router-view/>
