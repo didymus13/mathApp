@@ -6,14 +6,14 @@
         <img src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28">
       </a>
 
-      <button class="button navbar-burger">
+      <div class="navbar-burger" data-target="navMenu">
         <span></span>
         <span></span>
         <span></span>
-      </button>
+      </div>
     </div>
 
-    <div class="navbar-menu">
+    <div class="navbar-menu" id="navMenu">
       <div class="navbar-start">
         <a href="#/addition" class="navbar-item">
           <span class="fas fa-plus-square fa-fw"></span>
