@@ -1,6 +1,6 @@
 {
   "name": "math-app",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Math practice for kids",
   "author": "Stephane Doiron <didymus1313@gmail.com>",
   "private": true,
