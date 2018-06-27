@@ -1,4 +1,5 @@
 # math-app
+> Take note that this package has been abandoned and been integrated in [my Apps repo](https://github.com/didymus13/apps) for now.
 
 > Math practice for kids
 
